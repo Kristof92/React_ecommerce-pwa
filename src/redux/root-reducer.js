@@ -4,17 +4,21 @@ import storage from 'redux-persist/lib/storage'
 
 import userReducer from "./user/user.reducer"
 import cartReducer from "./cart/cart.reducer"
+import directoryReducer from "./directory/directory.reducer"
+import shopReducer from "./shop/shop.reducer"
 
 const persistConfig = {
   key: 'root',
   storage,
+  // the reason user is not persisted in local storage since it is handled by Firebase
   whitelist: ['cart']
-  // user is not persisted in local storage since it is handled by Firebase
 }
 
 const rootReducer = combineReducers({
   user: userReducer,
-  cart: cartReducer
+  cart: cartReducer,
+  directory: directoryReducer,
+  shop: shopReducer
 })
 
 export default persistReducer(persistConfig, rootReducer)
