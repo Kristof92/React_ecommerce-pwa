@@ -1,11 +1,11 @@
 # React e-commerce PWA App
 
-### (using React, Redux, Firebase, etc...)
+### (using SASS, React, Redux, Firebase, Stripe, etc...)
 <br />
 
 ---
 
-Pet-project for practicing React SPA app building
+Pet-project for practicing React SPA app building (just client-side this time)
 
 ---
 <br />
